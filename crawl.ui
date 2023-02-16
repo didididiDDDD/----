@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>crawl_window</class>
+ <widget class="QMainWindow" name="crawl_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>emotional damage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+#window2{border-image: url(:/w2/0.jpg);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="quit">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>500</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#quit:!hover{
+border-radius:10px;
+background-color:rgb(255, 250, 189);
+font: 18pt &quot;华文行楷&quot;;
+}
+
+#quit:hover{
+border-radius:10px;
+background-color:rgb(170, 255, 255);
+font: 18pt &quot;华文行楷&quot;;
+}
+#quit:pressed{padding-top:5px;
+padding-left:5px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="crawl">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>420</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#crawl:!hover{
+border-radius:10px;
+background-color:rgb(255, 250, 189);
+font: 18pt &quot;华文行楷&quot;;
+}
+
+#crawl:hover{
+border-radius:10px;
+background-color:rgb(170, 255, 255);
+font: 18pt &quot;华文行楷&quot;;
+}
+#crawl:pressed{padding-top:5px;
+padding-left:5px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>爬取</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>130</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cooike">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>120</y>
+      <width>361</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;隶书&quot;;
+border-radius:10px;
+background-color: rgba(253, 253, 253, 50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>cooike</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="agent">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>190</y>
+      <width>361</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;隶书&quot;;
+border-radius:10px;
+background-color: rgba(253, 253, 253, 50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>agent</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="url">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>50</y>
+      <width>361</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;隶书&quot;;
+border-radius:10px;
+background-color: rgba(253, 253, 253, 50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>url</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>801</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;宋体&quot;;
+background-color: rgba(253, 253, 253, 50);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>500</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#back:!hover{
+border-radius:10px;
+background-color:rgb(255, 250, 189);
+font: 18pt &quot;华文行楷&quot;;
+}
+
+#back:hover{
+border-radius:10px;
+background-color:rgb(170, 255, 255);
+font: 18pt &quot;华文行楷&quot;;
+}
+#back:pressed{padding-top:5px;
+padding-left:5px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="file_name">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>260</y>
+      <width>361</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;华文行楷&quot;;
+border-radius:10px;
+background-color: rgba(253, 253, 253, 50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>文件夹名</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="file_csv">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>330</y>
+      <width>361</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;华文行楷&quot;;
+border-radius:10px;
+background-color: rgba(253, 253, 253, 50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>文件名</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hot">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>420</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#hot:!hover{
+border-radius:10px;
+background-color:rgb(255, 250, 189);
+font: 18pt &quot;华文行楷&quot;;
+}
+
+#hot:hover{
+border-radius:10px;
+background-color:rgb(170, 255, 255);
+font: 18pt &quot;华文行楷&quot;;
+}
+#hot:pressed{padding-top:5px;
+padding-left:5px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>热词</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sentiments">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>420</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sentiments:!hover{
+border-radius:10px;
+background-color:rgb(255, 250, 189);
+font: 18pt &quot;华文行楷&quot;;
+}
+
+#sentiments:hover{
+border-radius:10px;
+background-color:rgb(170, 255, 255);
+font: 18pt &quot;华文行楷&quot;;
+}
+#sentiments:pressed{padding-top:5px;
+padding-left:5px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>情感</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bg_gif">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>bg_gif</zorder>
+   <zorder>quit</zorder>
+   <zorder>crawl</zorder>
+   <zorder>label</zorder>
+   <zorder>cooike</zorder>
+   <zorder>agent</zorder>
+   <zorder>url</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>back</zorder>
+   <zorder>file_name</zorder>
+   <zorder>file_csv</zorder>
+   <zorder>hot</zorder>
+   <zorder>sentiments</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

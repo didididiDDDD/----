@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>info</class>
+ <widget class="QMainWindow" name="info">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>hhhhhhdu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>660</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#back:!hover{
+border-radius:10px;
+background-color:transparent;
+font: 18pt &quot;华文行楷&quot;;
+}
+
+#back:hover{
+border-radius:10px;
+background-color:rgb(170, 255, 255);
+font: 18pt &quot;华文行楷&quot;;
+}
+#back:pressed{padding-top:5px;
+padding-left:5px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>660</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#quit:!hover{
+border-radius:10px;
+background-color:transparent;
+font: 18pt &quot;华文行楷&quot;;
+}
+
+#quit:hover{
+border-radius:10px;
+background-color:rgb(170, 255, 255);
+font: 18pt &quot;华文行楷&quot;;
+}
+#quit:pressed{padding-top:5px;
+padding-left:5px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>back</zorder>
+   <zorder>quit</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
